@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.e6520.telefonowka.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="385dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="393dp"
+        android:layout_height="63dp"
+        android:text="SHOW DATE PICKER DIALOG"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="@+id/listView"
+        app:layout_constraintRight_toRightOf="@+id/listView"
+        tools:layout_editor_absoluteY="441dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
